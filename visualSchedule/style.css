@@ -1,0 +1,38 @@
+/* DRAG/DROP STYLING */
+body {
+    background: darksalmon;
+  }
+  
+  .task {
+    
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+  #bed {
+    background-image: url("images/bed.png");
+  }
+  #food {
+    background-image: url("images/food.png");
+  }
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 3px salmon;
+    background: white;
+  }
+  
+  .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+  
