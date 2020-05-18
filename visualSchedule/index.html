@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Schedule</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- DRAG/DROP ZONE -->
-    <div class="holder">
-        <div class="task" id="bed" draggable="true"> </div>
-        <div class="task" id="food" draggable="true"> </div>
-        <div class="task" id="school" draggable="true"> </div>
-      </div>
-    
-    
-      <div class="empty">
-      
-      </div>
-      <div class="empty">
-      
+    <div class="container" id="tasks">
+        <h1>Tasks</h1>
+        <img src="images/bed.png" class="draggable" draggable="true"></img>
+        <img src="images/school.png" class="draggable" draggable="true"></img>
+        <img src="images/food.png" class="draggable" draggable="true"></img>
+        <img src="images/outside.png" class="draggable" draggable="true"></img>
+        <img src="images/play.png" class="draggable" draggable="true"></img>
+        <img src="images/TV.png" class="draggable" draggable="true"></img>        
     </div>
-    <div class="empty">
-      
+    <div class="container">
+        <h1>Today's Schedule</h1>
     </div>
-    <div class="empty">
-      
+    <div class="container">
+        <h1>Today's Rewards</h1>
     </div>
-    
+      
 </body>
 </html>
