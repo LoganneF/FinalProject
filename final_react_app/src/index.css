@@ -23,16 +23,3 @@ img {
   padding: 1rem;
   margin-top: 1rem;
 }
-
-.draggable {
-  height: 100px;
-  width: 110px;
-  padding: 1rem;
-  background-color: rgb(228, 51, 51);
-  border: 1px solid rgb(240, 174, 174);
-  cursor: move;
-}
-
-.draggable.dragging {
-  opacity: .5;
-} 
