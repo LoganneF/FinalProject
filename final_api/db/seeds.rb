@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Profile.create([
-    { name: 'Eddie', age: '22', diagnosis: 'autism', behaviors: 'yelling, elopement', motivators: 'food, iPad games', communication: 'AAC device, sign language' }
+    { name: 'Eddie', age: '22', diagnosis: 'autism', behaviors: 'yelling, elopement', motivators: 'food, iPad games', communication: 'AAC device, sign language' },
 ]);
 
 puts "seeded database"
