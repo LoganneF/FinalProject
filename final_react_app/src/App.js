@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
-import Profile from './components/Profile';
 import Keyboard from './components/Keyboard';
 import Schedule from './components/Schedule';
 import Timer from './components/Timer'
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import HomePage from './components/Home';
+import Main from './components/Main';
 
 
 class App extends Component {
@@ -74,7 +74,7 @@ class App extends Component {
   getProfile () {
     fetch('http://localhost:3000/profiles')
       .then(response => response.json())
-      .then(json => this.setState({notices: json}))
+      .then(json => this.setState({profiles: json}))
       .catch(error => console.error(error))
   }
   render() {
@@ -84,11 +84,11 @@ class App extends Component {
           <Navigation />
             <Switch>
              <Route path="/" component={HomePage} exact/>
-             <Route path="/profile" component={Profile} 
-             profile={this.state.profile}
-             handleDelete={this.handleDelete}
-             handleUpdate={this.handleUpdate}
-             handleSubmit={this.handleAdd}/>
+             <Route path="/main" component={Main} 
+              profiles={this.state.profiles}
+              handleDelete={this.handleDelete}
+              handleUpdate={this.handleUpdate}
+              handleSubmit={this.handleAdd}/>
              <Route path="/keyboard" component={Keyboard}/>
              <Route path="/schedule" component={Schedule}/>
              <Route path="/timer" component={Timer}/>

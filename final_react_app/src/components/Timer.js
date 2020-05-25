@@ -49,9 +49,11 @@ class Timer extends Component {
         clearInterval(this.timer);
       }
 
+
     render () {
         
         return (
+    
         <div className="container">
             <h2 className="text-center">React Based Timer</h2>
             <div className="timer-container">
@@ -64,6 +66,49 @@ class Timer extends Component {
                 <button className="btn btn-alert" onClick={this.handleTimerStop.bind(this)}>Stop Timer</button>
                 <button className="btn btn-danger" onClick={this.handleTimerReset.bind(this)}>Reset!</button>
                 </div>
+                <figure>
+                  <img src={require('../images/help.png')} alt="help"/>
+                  <figcaption>Help</figcaption>
+                </figure>
+            </div>
+            <div className="tasks">
+              <h1>My Tasks</h1>
+              <figure>
+                <img src={require('../images/homework.png')} alt="notebook paper"/>
+                <figcaption>Homework</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/laundry.png')} alt="laundry basket"/>
+                <figcaption>Laundry</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/sweep.png')} alt="broom"/>
+                <figcaption>Sweep</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/cleanroom.png')} alt="dirty room"/>
+                <figcaption>Clean Room</figcaption>
+              </figure>
+            </div>
+            <div className="tasks">
+              <h1>My Rewards</h1>
+              <figure>
+                <img src={require('../images/snack.png')} alt="watermelon slice"/>
+                <figcaption>Snack</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/TV.png')} alt="television"/>
+                <figcaption>TV</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/outside.png')} alt="tree"/>
+                <figcaption>Outside</figcaption>
+              </figure>
+              <figure>
+                <img src={require('../images/play.png')} alt="boy playing with tools"/>
+                <figcaption>Play</figcaption>
+              </figure>
+              
             </div>
         </div>
     )

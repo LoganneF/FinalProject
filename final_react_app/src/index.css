@@ -23,3 +23,25 @@ img {
   padding: 1rem;
   margin-top: 1rem;
 }
+
+.keyboard {
+  background-color: rgb(108, 228, 168);
+}
+figure {
+  display: inline-block;
+}
+
+.noBorder {
+  text-align: center;
+  color: #000;
+  border: solid 2px transparent;
+  padding: 12px 12px 12px 12px; 
+  margin: 0px 0px 10px 0;
+}
+.withBorder {
+  text-align: center;
+  color: #000;
+  border: solid 2px #EC3A4B; 
+  padding: 12px 12px 12px 12px;
+  margin: 0px 0px 10px 0;
+}

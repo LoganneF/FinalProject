@@ -96,40 +96,96 @@ function Keyboard() {
    const [playZ] =useSound(zSound);
 
    return (
-      <div>
+      <div className="keyboard">
 
       <div>
       <h1>Keyboard</h1>
       <div>
+        <figure>
           <img src={require('../images/yes.png')} alt="thumbs up" onClick={playYes}/>
+          <figcaption>Yes</figcaption>
+        </figure>
+        <figure>
           <img src={require('../images/no.png')} alt="no" onClick={playNo}/>
+          <figcaption>No</figcaption>
+        </figure>
+        <figure>
           <img src={require('../images/help.png')} alt="help" onClick={playHelp}/>
+          <figcaption>Help</figcaption>
+        </figure>
       </div>
       <div>
         <h2>I need...</h2>
-        <img src={require('../images/drink.png')} alt="drink" onClick={playDrink}/>
-        <img src={require('../images/food.png')} alt="food" onClick={playFood}/>
-        <img src={require('../images/toilet.png')} alt="toilet" onClick={playBathroom}/>
-        <img src={require('../images/bath.png')} alt="bathtub" onClick={playBath}/>
-        <img src={require('../images/bed.png')} alt="bed" onClick={playBed}/>
+        <figure>
+          <img src={require('../images/drink.png')} alt="drink" onClick={playDrink}/>
+          <figcaption>Drink</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/food.png')} alt="food" onClick={playFood}/>
+          <figcaption>Food</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/toilet.png')} alt="toilet" onClick={playBathroom}/>
+          <figcaption>Toilet</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/bath.png')} alt="bathtub" onClick={playBath}/>
+          <figcaption>Bath</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/bed.png')} alt="bed" onClick={playBed}/>
+          <figcaption>Bed</figcaption>
+        </figure>
       </div>
       <div>
         <h2>I want...</h2>
-        <img src={require('../images/TV.png')} alt="tv" onClick={playTv}/>
-        <img src={require('../images/outside.png')} alt="outside" onClick={playOutside}/>
-        <img src={require('../images/play.png')} alt="play" onClick={playPlay}/>
+        <figure>
+          <img src={require('../images/TV.png')} alt="tv" onClick={playTv}/>
+          <figcaption>TV</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/outside.png')} alt="outside" onClick={playOutside}/>
+          <figcaption>Outside</figcaption>
+        </figure>
+        <figure>
+          <img src={require('../images/play.png')} alt="play" onClick={playPlay}/>
+          <figcaption>Play</figcaption>
+        </figure>
       </div>
+      <figure>
         <img src={require('../images/school.png')} alt="school bus" onClick={playSchool}/>
+        <figcaption>School</figcaption>
+      </figure> 
+      <figure>
         <img src={require('../images/home.png')} alt="house" onClick={playHome}/>
+        <figcaption>Home</figcaption>
+      </figure>
+      <figure>
         <img src={require('../images/mom.png')} alt="mom" onClick={playMom}/>
+        <figcaption>Mom</figcaption>
+      </figure>
+      <figure>  
         <img src={require('../images/dad.png')} alt="dad" onClick={playDad}/>
-      
+        <figcaption>Dad</figcaption>
+      </figure>
       <div>
         <h2>I feel...</h2>
+      <figure>
         <img src={require('../images/happy.png')} alt="smiley face" onClick={playHappy}/>
+        <figcaption>Happy</figcaption>
+      </figure>  
+      <figure>
         <img src={require('../images/mad.png')} alt="mad" onClick={playMad}/>
+        <figcaption>Mad</figcaption>
+      </figure>
+      <figure> 
         <img src={require('../images/sad.png')} alt="sad face" onClick={playSad}/>
+        <figcaption>Sad</figcaption>
+      </figure> 
+      <figure>
         <img src={require('../images/hurt.png')} alt="hurt" onClick={playHurt}/>
+        <figcaption>Hurt</figcaption>
+      </figure>
       </div>
       
       
