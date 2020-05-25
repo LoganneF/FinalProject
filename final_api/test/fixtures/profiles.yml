@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: MyString
+  diagnosis: MyString
+  behaviors: MyString
+  motivators: MyString
+  communication: MyString
+
+two:
+  name: MyString
+  age: MyString
+  diagnosis: MyString
+  behaviors: MyString
+  motivators: MyString
+  communication: MyString
