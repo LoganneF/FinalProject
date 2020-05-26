@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
+import '../App.css';
 
 class Timer extends Component {
     state = {
@@ -7,7 +9,21 @@ class Timer extends Component {
         hours: 0,
         minutes: 0,
         seconds: 0,
-        captures: []
+        captures: [],
+        tasks : {
+          item_1 : {
+              title : "Homework",
+              image : require('../images/homework.png'),
+              selected: false,
+          },
+         item_2 : {
+              title : "Laundry",
+              image : require('../images/laundry.png'),
+              selected: false,
+         }
+      
+      }
+  
     }
 
     handleTimerStart(e) {
@@ -49,12 +65,47 @@ class Timer extends Component {
         clearInterval(this.timer);
       }
 
+      onImageClick(event) {
+
+
+        let newState = Object.assign({}, this.state);
+
+        for (let selection in newState.tasks) {
+          if (selection !== event.target.id) {
+            newState.tasks[selection].selected = false;
+          }
+        }
+    
+        newState.tasks[event.target.id].selected = true;
+        this.setState({
+          newState,
+        })
+      }
+
 
     render () {
         
         return (
     
         <div className="container">
+           <Grid container>
+            <Grid item sm={1}></Grid>
+            {Object.keys(this.state.tasks).map(item => (
+               <Grid item sm key={item}>
+                <div className={this.state.tasks['selected'] ? "withBorder" : "noBorder"} >
+                  <img
+                    src={this.state.tasks['image']} 
+                    id={this.state.tasks['name']}
+                    alt={this.state.tasks['name']} 
+                    onClick={(e) => this.onImageClick(e)}/>
+                
+                <p>{this.state.tasks['name']}</p>
+              </div>
+            </Grid>
+          ))}
+          <Grid item sm={1}></Grid>
+
+        </Grid>
             <h2 className="text-center">React Based Timer</h2>
             <div className="timer-container">
                 <div className="current-timer">

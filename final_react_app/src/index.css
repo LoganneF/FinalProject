@@ -15,7 +15,7 @@ code {
 img {
   height: 120px;
   width: 100px;
-  border: 1px solid black;
+  
 }
 
 .container {
@@ -25,7 +25,7 @@ img {
 }
 
 .keyboard {
-  background-color: rgb(108, 228, 168);
+  background-color: rgb(238, 218, 209);
 }
 figure {
   display: inline-block;
@@ -44,4 +44,13 @@ figure {
   border: solid 2px #EC3A4B; 
   padding: 12px 12px 12px 12px;
   margin: 0px 0px 10px 0;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+AppBar {
+  background-color: blue;
 }

@@ -94,10 +94,12 @@ function Keyboard() {
    const [playX] =useSound(xSound);
    const [playY] =useSound(ySound);
    const [playZ] =useSound(zSound);
+  
+
 
    return (
       <div className="keyboard">
-
+       
       <div>
       <h1>Keyboard</h1>
       <div>
@@ -126,7 +128,7 @@ function Keyboard() {
         </figure>
         <figure>
           <img src={require('../images/toilet.png')} alt="toilet" onClick={playBathroom}/>
-          <figcaption>Toilet</figcaption>
+          <figcaption>Bathroom</figcaption>
         </figure>
         <figure>
           <img src={require('../images/bath.png')} alt="bathtub" onClick={playBath}/>
@@ -171,15 +173,15 @@ function Keyboard() {
       <div>
         <h2>I feel...</h2>
       <figure>
-        <img src={require('../images/happy.png')} alt="smiley face" onClick={playHappy}/>
+        <img src={require('../images/happyIcon.png')} alt="smiley face" onClick={playHappy}/>
         <figcaption>Happy</figcaption>
       </figure>  
       <figure>
-        <img src={require('../images/mad.png')} alt="mad" onClick={playMad}/>
+        <img src={require('../images/angryIcon.png')} alt="mad" onClick={playMad}/>
         <figcaption>Mad</figcaption>
       </figure>
       <figure> 
-        <img src={require('../images/sad.png')} alt="sad face" onClick={playSad}/>
+        <img src={require('../images/sadIcon.png')} alt="sad face" onClick={playSad}/>
         <figcaption>Sad</figcaption>
       </figure> 
       <figure>
@@ -194,32 +196,32 @@ function Keyboard() {
       <div>
         <h1>Alphabet</h1>
           
-         <img src={require('../alphImages/A.png')} alt="bed" onClick={playA}/>
-         <img src={require('../alphImages/B.png')} alt="bed" onClick={playB}/>
-         <img src={require('../alphImages/C.png')} alt="bed" onClick={playC}/>
-         <img src={require('../alphImages/D.png')} alt="bed" onClick={playD}/>
-         <img src={require('../alphImages/E.png')} alt="bed" onClick={playE}/>
-         <img src={require('../alphImages/F.png')} alt="bed" onClick={playF}/>
-         <img src={require('../alphImages/G.png')} alt="bed" onClick={playG}/>
-         <img src={require('../alphImages/H.png')} alt="bed" onClick={playH}/>
-         <img src={require('../alphImages/I.png')} alt="bed" onClick={playI}/>
-         <img src={require('../alphImages/J.png')} alt="bed" onClick={playJ}/>
-         <img src={require('../alphImages/K.png')} alt="bed" onClick={playK}/>
-         <img src={require('../alphImages/L.png')} alt="bed" onClick={playL}/>
-         <img src={require('../alphImages/M.png')} alt="bed" onClick={playM}/>
-         <img src={require('../alphImages/N.png')} alt="bed" onClick={playN}/>
-         <img src={require('../alphImages/O.png')} alt="bed" onClick={playO}/>
-         <img src={require('../alphImages/P.png')} alt="bed" onClick={playP}/>
-         <img src={require('../alphImages/Q.png')} alt="bed" onClick={playQ}/>
-         <img src={require('../alphImages/R.png')} alt="bed" onClick={playR}/>
-         <img src={require('../alphImages/S.png')} alt="bed" onClick={playS}/>
-         <img src={require('../alphImages/T.png')} alt="bed" onClick={playT}/>
-         <img src={require('../alphImages/U.png')} alt="bed" onClick={playU}/>
-         <img src={require('../alphImages/V.png')} alt="bed" onClick={playV}/>
-         <img src={require('../alphImages/W.png')} alt="bed" onClick={playW}/>
-         <img src={require('../alphImages/X.png')} alt="bed" onClick={playX}/>
-         <img src={require('../alphImages/Y.png')} alt="bed" onClick={playY}/>
-         <img src={require('../alphImages/Z.png')} alt="bed" onClick={playZ}/>
+         <img src={require('../alphImages/iconA.png')} alt="bed" onClick={playA}/>
+         <img src={require('../alphImages/iconB.png')} alt="bed" onClick={playB}/>
+         <img src={require('../alphImages/iconC.png')} alt="bed" onClick={playC}/>
+         <img src={require('../alphImages/iconD.png')} alt="bed" onClick={playD}/>
+         <img src={require('../alphImages/iconE.png')} alt="bed" onClick={playE}/>
+         <img src={require('../alphImages/iconF.png')} alt="bed" onClick={playF}/>
+         <img src={require('../alphImages/iconG.png')} alt="bed" onClick={playG}/>
+         <img src={require('../alphImages/iconH.png')} alt="bed" onClick={playH}/>
+         <img src={require('../alphImages/iconI.png')} alt="bed" onClick={playI}/>
+         <img src={require('../alphImages/iconJ.png')} alt="bed" onClick={playJ}/>
+         <img src={require('../alphImages/iconK.png')} alt="bed" onClick={playK}/>
+         <img src={require('../alphImages/iconL.png')} alt="bed" onClick={playL}/>
+         <img src={require('../alphImages/iconM.png')} alt="bed" onClick={playM}/>
+         <img src={require('../alphImages/iconN.png')} alt="bed" onClick={playN}/>
+         <img src={require('../alphImages/iconO.png')} alt="bed" onClick={playO}/>
+         <img src={require('../alphImages/iconP.png')} alt="bed" onClick={playP}/>
+         <img src={require('../alphImages/iconQ.png')} alt="bed" onClick={playQ}/>
+         <img src={require('../alphImages/iconR.png')} alt="bed" onClick={playR}/>
+         <img src={require('../alphImages/iconS.png')} alt="bed" onClick={playS}/>
+         <img src={require('../alphImages/iconT.png')} alt="bed" onClick={playT}/>
+         <img src={require('../alphImages/iconU.png')} alt="bed" onClick={playU}/>
+         <img src={require('../alphImages/iconV.png')} alt="bed" onClick={playV}/>
+         <img src={require('../alphImages/iconW.png')} alt="bed" onClick={playW}/>
+         <img src={require('../alphImages/iconX.png')} alt="bed" onClick={playX}/>
+         <img src={require('../alphImages/iconY.png')} alt="bed" onClick={playY}/>
+         <img src={require('../alphImages/iconZ.png')} alt="bed" onClick={playZ}/>
          
          
        </div>

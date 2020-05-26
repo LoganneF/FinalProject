@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Keyboard from './components/Keyboard';
-import Schedule from './components/Schedule';
 import Timer from './components/Timer'
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import HomePage from './components/Home';
 import Main from './components/Main';
+
 
 
 class App extends Component {
@@ -90,10 +90,10 @@ class App extends Component {
               handleUpdate={this.handleUpdate}
               handleSubmit={this.handleAdd}/>
              <Route path="/keyboard" component={Keyboard}/>
-             <Route path="/schedule" component={Schedule}/>
              <Route path="/timer" component={Timer}/>
             <Route component={Error}/>
            </Switch>
+           
         </div> 
       </BrowserRouter>
     );

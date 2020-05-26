@@ -1,16 +1,21 @@
 import React from 'react';
- 
 import { NavLink } from 'react-router-dom';
- 
+import AppBar from '@material-ui/core/AppBar';
+import '../App.css'
+
 const Navigation = () => {
     return (
-       <div>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/main">Profile</NavLink>
-          <NavLink to="/keyboard">Keyboard</NavLink>
-          <NavLink to="/schedule">Schedule</NavLink>
-          <NavLink to="/timer">Timer</NavLink>
-       </div>
+      
+        <AppBar position="static">
+         <div>
+         <ul>
+         <li><NavLink to="/main">Profile</NavLink></li>
+         <li><NavLink to="/keyboard">Keyboard</NavLink></li>
+         <li><NavLink to="/timer">Timer</NavLink></li>
+         </ul>
+         </div>
+        </ AppBar >
+      
     );
 }
  
